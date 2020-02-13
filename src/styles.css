@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+}
+.header {
+    border-bottom: 1px solid blue;
+    width: 100%;
+    height: 70px;
+    background-color: #4267B2;
+    /* position: fixed; */
+    display: flex;
+    justify-content: space-between;
+}
+.titleBox{
+    margin-left: 30px;
+    display: flex;
+}
+.title{
+    margin-top: 5px;
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+
+.titleImg {
+    /* margin-top: 10px; */
+    margin-top: 15px;
+    width: 40px;
+    height: 40px;
+}
+.loginButtonBox {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 4%;
+}
+.loginButton {
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+}
+    .enterInfo{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* color: #f5f5f5; */
+}
+
+.signupButton {
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+}
