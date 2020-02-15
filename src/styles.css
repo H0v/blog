@@ -1,50 +1,78 @@
-*{
-    margin: 0;
+* {
+  margin: 0;
 }
 .header {
-    border-bottom: 1px solid blue;
-    width: 100%;
-    height: 70px;
-    background-color: #4267B2;
-    /* position: fixed; */
-    display: flex;
-    justify-content: space-between;
+  border-bottom: 1px solid blue;
+  width: 100%;
+  height: 70px;
+  background-color: #4267b2;
+  /* position: fixed; */
+  display: flex;
+  justify-content: space-between;
 }
-.titleBox{
-    margin-left: 30px;
-    display: flex;
+.titleBox {
+  margin-left: 30px;
+  display: flex;
 }
-.title{
-    margin-top: 5px;
-    font-size: 50px;
-    font-weight: 700;
-    color: white;
+.title {
+  margin-top: 5px;
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
 }
 
 .titleImg {
-    /* margin-top: 10px; */
-    margin-top: 15px;
-    width: 40px;
-    height: 40px;
+  /* margin-top: 10px; */
+  margin-top: 15px;
+  width: 40px;
+  height: 40px;
 }
 .loginButtonBox {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-right: 4%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 4%;
 }
 .loginButton {
-    cursor: pointer;
-    width: 100px;
-    height: 40px;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
 }
-    .enterInfo{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    /* color: #f5f5f5; */
+.enterInfo {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  /* color: #f5f5f5; */
 }
 
 .signupButton {
-    cursor: pointer;
-    width: 100px;
-    height: 40px;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
 }
+.postText {
+  background: #e8e8e8;
+  min-width: 500px;
+  min-height: 10px;
+  max-width: 30%;
+  max-height: 500px;
+  border-bottom: 1px solid #878787;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.postText:focus {
+  transition-duration: 1s;
+  border-bottom: 1px solid #3f51b5;
+}
+
+.newPostContainer {
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+}
+
+@media (max-width: 420px) {
+    .title{
+        display: none;
+    }
+  }

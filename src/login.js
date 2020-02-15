@@ -49,11 +49,18 @@ class Login extends React.Component {
 
   login = () => {
     const users = JSON.parse(localStorage.getItem("users"));
-    if(users.some(user => user.name === this.state.name && user.password === this.state.password)){
-     let currentUser = users.find(user => user.name === this.state.name && user.password === this.state.password);
-      currentUser.online = !currentUser.online;
-      localStorage.setItem("users",JSON.stringify(users));
-      this.props.saveUsers();
+    if(JSON.parse(localStorage.getItem("users"))){
+      if(users.some(user => user.name === this.state.name && user.password === this.state.password)){
+       let currentUser = users.find(user => user.name === this.state.name && user.password === this.state.password);
+        currentUser.online = !currentUser.online;
+        localStorage.setItem("users",JSON.stringify(users));
+        this.props.saveUsers();
+      } else {
+        return true
+      }
+    } else {
+      alert("Please Sign up");
+      this.props.returnSignUp();
     }
   }
   render() {
