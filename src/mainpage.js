@@ -36,12 +36,16 @@ class Mainpage extends React.Component {
       () => console.log(this.state.signing)
     );
   };
+
+  
   saveUsers = (users = JSON.parse(localStorage.getItem("users"))) => {
     this.setState(state => ({
       ...state,
       users: users
     }));
   };
+
+
   logout = () => {
     if (window.confirm("Do you Want to leave your account?")) {
       this.setState(

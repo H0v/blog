@@ -9,31 +9,29 @@ class CreatePost extends React.Component {
   constructor(props) {
     super(props);
     const posts = JSON.parse(localStorage.getItem("posts")) || [];
-    this.state = {  posts: posts };
+    this.state = { posts: posts };
   }
 
-//                ^
-//               ||
-//   title, content, date, author,
+  //                ^
+  //               ||
+  //   title, content, date, author,
 
+  //   addNewPost = () => {
 
-//   addNewPost = () => {
-
-//     this.setState(state => ({
-//       ...state,
-//       posts: [
-//         ...state.posts,
-//         {
-//           title: postTitle,
-//           content: postContent,
-//           date: currentDate,
-//           author: currentAuthor,
-//           commentAuthor: commentAuthor,
-//           comment: comment
-//         }
-//       ]
-//     }));
-//   };
+  //     this.setState(state => ({
+  //       ...state,
+  //       posts: [
+  //         ...state.posts,
+  //         {
+  //           title: postTitle,
+  //           content: postContent,
+  //           date: currentDate,
+  //           author: currentAuthor,
+  //           comments: comments
+  //         }
+  //       ]
+  //     }));
+  //   };
 
   render() {
     return (

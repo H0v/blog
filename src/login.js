@@ -36,7 +36,7 @@ class Login extends React.Component {
     // const name = event.target.value.replace(/\s\s+/g, " ");
     const name = event.target.value;
     this.setState(state => ({ 
-      ...state, name: name
+      ...state, name,
     }),() => console.log(this.state.name))
   }
 

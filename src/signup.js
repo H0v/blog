@@ -6,6 +6,18 @@ import "../src/styles.css";
 import Input from "@material-ui/core/Input";
 import Button from "@material-ui/core/Button";
 
+const cardStyles = {
+  background: "#f5f5f5",
+  width: "500px",
+  height: "320px",
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  marginLeft: "-250px",
+  marginTop: "-150px",
+  textAlign: "center",
+}
+
 class Signup extends React.Component {
   constructor(props) {
     super(props);
@@ -20,20 +32,6 @@ class Signup extends React.Component {
       users: users
     };
   }
-
-  cardStyle = () => {
-    return {
-      background: "#f5f5f5",
-      width: "500px",
-      height: "320px",
-      position: "absolute",
-      top: "50%",
-      left: "50%",
-      marginLeft: "-250px",
-      marginTop: "-150px",
-      textAlign: "center"
-    };
-  };
 
   handleName = event => {
     // const name = event.target.value.replace(/\s\s+/g, " ");
@@ -88,7 +86,7 @@ class Signup extends React.Component {
         () => {
           localStorage.setItem("users", JSON.stringify(this.state.users));
           this.props.saveUsers(this.state.users);
-          console.log("asd")
+          console.log("asd");
         }
       );
     }
@@ -97,7 +95,7 @@ class Signup extends React.Component {
   render() {
     return (
       <>
-        <Card className="loginCard" style={this.cardStyle()} variant="outlined">
+        <Card className="loginCard" style={cardStyles} variant="outlined">
           <CardContent>
             <Typography variant="h5">Sign up</Typography>
             <br></br>
